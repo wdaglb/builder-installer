@@ -1,0 +1,24 @@
+{
+    "name": "ke/builder-installer",
+    "type": "composer-plugin",
+    "require": {
+        "composer-plugin-api": "^1.0"
+    },
+    "require-dev": {
+        "composer/composer": "1.0.*@dev"
+    },
+    "authors": [
+        {
+            "name": "king east",
+            "email": "1207877378@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ke\\composer\\": "src"
+        }
+    },
+    "extra": {
+        "class": "ke\\composer\\Install"
+    }
+}
