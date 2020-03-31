@@ -19,6 +19,7 @@ class BuilderFramework extends LibraryInstaller
 
     public function getInstallPath(PackageInterface $package)
     {
+        var_dump($package->getPrettyName());
         if ($package->getPrettyName() !== 'ke/builder') {
             throw new \InvalidArgumentException('Enable to install this library!');
         }
