@@ -1,6 +1,7 @@
 {
     "name": "ke/builder-installer",
     "type": "composer-plugin",
+    "minimum-stability": "dev",
     "require": {
         "composer-plugin-api": "^1.0"
     },
@@ -19,6 +20,6 @@
         }
     },
     "extra": {
-        "class": "ke\\composer\\Install"
+        "class": "ke\\composer\\BuilderTemplate"
     }
 }
