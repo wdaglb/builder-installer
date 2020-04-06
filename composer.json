@@ -1,8 +1,6 @@
 {
     "name": "ke/builder-installer",
     "type": "composer-plugin",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "require": {
         "composer-plugin-api": "^1.0"
     },
