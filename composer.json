@@ -20,6 +20,6 @@
         }
     },
     "extra": {
-        "class": "ke\\composer\\BuilderOutput"
+        "class": "ke\\composer\\Init"
     }
 }
