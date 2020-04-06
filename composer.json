@@ -1,5 +1,5 @@
 {
-    "name": "ke/builder-installers",
+    "name": "ke/builder-installer",
     "type": "composer-plugin",
     "minimum-stability": "dev",
     "prefer-stable": true,
