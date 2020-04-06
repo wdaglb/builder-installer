@@ -20,6 +20,7 @@ class BuilderOutput extends LibraryInstaller
 
     public function getInstallPath(PackageInterface $package)
     {
+        var_dump($package->getType());
         if ($package->getType() !== 'ke-builder-template') {
             return parent::getInstallPath($package);
         }
