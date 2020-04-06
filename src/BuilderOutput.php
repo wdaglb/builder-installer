@@ -20,14 +20,11 @@ class BuilderOutput extends LibraryInstaller
 
     public function getInstallPath(PackageInterface $package)
     {
-        var_dump($package->getType());
-        if ($package->getType() !== 'ke-builder-template') {
+        $name = $package->getPrettyName();
+        if (strpos($name, 'ke-builder-template/') === false) {
             return parent::getInstallPath($package);
         }
-        $name = $package->getName();
-        if (strpos($name, '/')) {
-            $name = str_replace('ke-builder-template/', '', $name);
-        }
+        $name = str_replace('ke-builder-template/', '', $name);
 
         return 'public/static/' . $name;
     }
